@@ -11,8 +11,9 @@ export default function Hero() {
         and user-centric.
       </p>
       <Link
-        href="#"
-        className="flex gap-2 items-center w-fit mx-auto px-8 py-4 text-white bg-accent rounded-xl transition-shadow duration-200 hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
+        href="/thanawat-panpinij_resume.pdf"
+        target="_blank"
+        className="flex gap-2 items-center w-fit mx-auto px-8 py-4 text-white bg-accent rounded-xl transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
       >
         <SlEye size={24} />
         Resume

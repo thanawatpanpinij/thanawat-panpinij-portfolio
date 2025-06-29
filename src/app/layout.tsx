@@ -10,7 +10,7 @@ const varelaRound = Varela_Round({
 });
 
 export const metadata: Metadata = {
-  title: "Thanawat Panpinij",
+  title: "Portfolio | Thanawat Panpinij",
   description: "This is a personal portfolio website for Thanawat Panpinij",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        id="top"
+        id="home"
         className={`${varelaRound.className} bg-black antialiased`}
       >
         <Navbar />

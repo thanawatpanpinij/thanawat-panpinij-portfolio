@@ -6,27 +6,30 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex justify-between items-center p-8 text-secondary bg-white">
-      <div className="flex gap-4">
+      <div className="flex gap-6">
         <Link
           href="https://github.com/thanawatpanpinij"
           target="_blank"
-          className="transition-all duration-200 hover:-translate-y-px hover:text-accent"
+          aria-label="Go to GitHub"
+          className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
-          <FiGithub size={20} />
+          <FiGithub size={25} />
         </Link>
         <Link
           href="https://www.linkedin.com/in/thanawat-panpinij-a44848212/"
           target="_blank"
-          className="transition-all duration-200 hover:-translate-y-px hover:text-accent"
+          aria-label="Go to Linkedin"
+          className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
-          <LuLinkedin size={20} />
+          <LuLinkedin size={25} />
         </Link>
         <Link
           href="https://codepen.io/thanawatpanpinij"
           target="_blank"
-          className="transition-all duration-200 hover:-translate-y-px hover:text-accent"
+          aria-label="Go to Codepen"
+          className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
-          <FaCodepen size={20} />
+          <FaCodepen size={25} />
         </Link>
       </div>
       <p className="text-xs">@2025 Thanawat Panpinij. All rights reserved.</p>
