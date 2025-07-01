@@ -13,10 +13,11 @@ export default function Hero() {
       <Link
         href="/thanawat-panpinij_resume.pdf"
         target="_blank"
-        className="flex gap-2 items-center w-fit mx-auto px-8 py-4 text-white bg-accent rounded-xl transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
+        rel="noopener"
+        className="flex gap-2 items-center w-fit mx-auto px-8 py-4 text-white text-shadow-[1px_1px_1px_rgba(6,17,26,.3)] bg-accent rounded-xl transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
       >
         <SlEye size={24} />
-        Resume
+        <span>Resume</span>
       </Link>
     </section>
   );

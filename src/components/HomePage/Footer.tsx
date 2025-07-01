@@ -11,6 +11,7 @@ export default function Footer() {
           href="https://github.com/thanawatpanpinij"
           target="_blank"
           aria-label="Go to GitHub"
+          rel="noopener noreferrer"
           className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
           <FiGithub size={25} />
@@ -19,6 +20,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/thanawat-panpinij-a44848212/"
           target="_blank"
           aria-label="Go to Linkedin"
+          rel="noopener noreferrer"
           className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
           <LuLinkedin size={25} />
@@ -27,6 +29,7 @@ export default function Footer() {
           href="https://codepen.io/thanawatpanpinij"
           target="_blank"
           aria-label="Go to Codepen"
+          rel="noopener noreferrer"
           className="transition-all duration-200 hover:-translate-y-1 hover:text-accent"
         >
           <FaCodepen size={25} />

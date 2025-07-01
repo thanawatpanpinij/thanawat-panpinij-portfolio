@@ -1,5 +1,5 @@
 function highlightCurrentNavItem(sectionId: string) {
-  const currentSection = document.querySelector(`a[href="#${sectionId}"]`);
+  const currentSection = document.querySelector(`a[href="${sectionId}"]`);
   const currentNav = document.getElementById("current-nav");
   if (currentNav && currentSection && currentSection instanceof HTMLElement) {
     currentNav.style.width = currentSection.offsetWidth + "px";

@@ -1,6 +1,19 @@
-type NavList = {
+type NavItem = {
   label: string;
   href: string;
 };
 
-export type { NavList };
+type Project = {
+  id: string;
+  title: string;
+  frontendRepo?: string;
+  backendRepo?: string;
+  liveDemo?: string;
+  imageURL: string;
+  stacks: {
+    stackURL: string;
+    alt: string;
+  }[];
+};
+
+export type { NavItem, Project };
