@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SlEye } from "react-icons/sl";
 
 export default function Hero() {
@@ -12,7 +11,7 @@ export default function Hero() {
         I'm passionate about crafting experiences that are engaging, intuitive,
         and user-centric.
       </p>
-      <Link
+      <a
         href="/thanawat-panpinij_resume.pdf"
         target="_blank"
         rel="noopener"
@@ -20,7 +19,7 @@ export default function Hero() {
       >
         <SlEye size={24} />
         <span>Resume</span>
-      </Link>
+      </a>
     </section>
   );
 }
