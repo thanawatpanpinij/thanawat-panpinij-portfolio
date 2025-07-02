@@ -13,12 +13,12 @@ export default function ProjectSection() {
   return (
     <section id="works" className="sections grid gap-8">
       <section className="flex gap-8 items-center">
-        <hr className="border border-secondary w-[min(100%,731px)] h-[1px]" />
-        <h2 className="text-[2rem] text-gray">
+        <hr className="flex-grow border border-secondary w-[40%] lg:w-[min(100%,731px)] h-[1px]" />
+        <h2 className="text-[1.75rem] lg:text-[2rem] text-gray whitespace-nowrap">
           My <span className="text-accent">Works</span>
         </h2>
       </section>
-      <section className="grid gap-4 grid-cols-2 mt-8">
+      <section className="grid gap-4 576:grid-cols-2 mt-8">
         {showAll
           ? projects.map((project) => (
               <ProjectCard key={uuidv4()} project={project} />
@@ -29,7 +29,7 @@ export default function ProjectSection() {
       </section>
       <button
         onClick={() => setShowAll(!showAll)}
-        className="cursor-pointer flex gap-2 justify-self-end items-center w-fit px-8 py-4 text-accent border-3 border-accent rounded-xl transition-all duration-200 hover:-translate-y-1 hover:text-white hover:bg-accent hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
+        className="cursor-pointer flex gap-2 lg:justify-self-end items-center w-fit mx-auto lg:mx-0 px-8 py-4 text-accent border-3 border-accent rounded-xl transition-all duration-200 hover:-translate-y-1 hover:text-white hover:bg-accent hover:shadow-[0_0_10px_rgba(0,174,293,.6)]"
       >
         {showAll ? (
           <>

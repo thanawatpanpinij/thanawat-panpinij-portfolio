@@ -3,7 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export default function Contact() {
   return (
-    <section id="contact" className="sections relative pt-8 pb-16">
+    <section id="contact" className="sections relative px-8 pt-8 pb-16">
       <div className="overflow-hidden absolute -z-1 top-[-53px] left-0 w-full h-[calc(100%+53px)]">
         <svg
           viewBox="0 0 1440 420"
@@ -12,15 +12,21 @@ export default function Contact() {
         >
           <path
             fill="var(--color-secondary)"
-            d="M0,100 Q 720 -100, 1440 100 L1440,420 L0,420 L0,100"
+            d="M0,50 Q720 -30,1440 50 L1440,420 L0,420 L0,50"
+            className="md:hidden"
+          />
+          <path
+            fill="var(--color-secondary)"
+            d="M0,100 Q720 -100, 1440 100 L1440,420 L0,420 L0,100"
+            className="hidden md:block"
           />
         </svg>
       </div>
       <div className="w-[min(100%,915px)] mx-auto text-center">
-        <p className="mb-4 text-accent text-2xl">
-          Let’s build something meaningful together!
+        <p className="mb-4 text-accent text-xl lg:text-2xl">
+          Let's build something meaningful together!
         </p>
-        <h2 className="mb-4 text-5xl text-white">Get In Touch</h2>
+        <h2 className="mb-4 text-4xl lg:text-5xl text-white">Get In Touch</h2>
         <p className="max-w-[764px] mx-auto mb-12 text-dark-gray">
           Whether you're looking for a passionate full-stack developer, want to
           collaborate on a creative project, or just want to say hi — feel free

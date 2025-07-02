@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center p-8 text-secondary bg-white">
-      <div className="flex gap-6">
+    <footer className="flex gap-12 justify-between items-center p-8 text-secondary bg-white">
+      <div className="flex gap-4 md:gap-6">
         <Link
           href="https://github.com/thanawatpanpinij"
           target="_blank"

@@ -1,40 +1,93 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FaRegAddressBook } from "react-icons/fa";
+// import Link from "next/link";
+// import { FaRegAddressBook } from "react-icons/fa";
 
 export default function About() {
   return (
     <section id="about" className="sections">
       <section className="flex gap-8 items-center mb-16">
-        <h2 className="text-[2rem] text-gray">
+        <h2 className="text-[1.75rem] lg:text-[2rem] text-gray whitespace-nowrap">
           <span className="text-accent">About</span> Me
         </h2>
-        <hr className="border border-secondary w-[min(100%,731px)] h-[1px]" />
+        <hr className="flex-grow border border-secondary h-[1px]" />
       </section>
-      <section className="flex gap-8">
-        <div className="w-[50%]">
-          <div className="grid gap-4 mb-8 text-dark-gray">
+      <section className="md:flex md:gap-8">
+        <div className="md:w-[50%]">
+          <div className="grid gap-4 mb-16 lg:mb-8 text-dark-gray">
             <p>
-              Hi! My name is Thanawat Panpinij — a developer with a creative
-              background in choreography and design. This background has shaped
-              my mindset: “True creativity starts with concept”, and it
-              continues to guide me on my new journey as a developer.
+              Hi! My name is{" "}
+              <span className="text-accent">Thanawat Panpinij</span> — a
+              developer with a{" "}
+              <span className="text-accent">creative background</span> in
+              choreography and design. This background has shaped my mindset:
+              “True creativity starts with concept”, and it continues to guide
+              me on my new journey as a developer.
             </p>
             <p>
-              Previously, I worked as a website administrator at a publishing
-              company, where I redesigned the site, optimized its SEO, and
-              gained hands-on experience with semantic HTML and CSS. Later, I
-              joined the Junior Software Developer program by GenKX (Generation
-              Thailand x KMUTT) and co-developed CalNoy, a clean food e-commerce
-              platform using the MERN stack in an Agile team setting. I
-              contributed to both Frontend and Backend, including Git workflow
-              support, API design, and deployment.
+              Previously, I worked as{" "}
+              <span className="text-accent">a website administrator</span> at a
+              publishing company, where I{" "}
+              <span className="text-accent">
+                redesigned the site, optimized its SEO, and gained hands-on
+                experience with semantic HTML and CSS
+              </span>
+              . Later, I joined the Junior Software Developer program by GenKX
+              (Generation Thailand x KMUTT) and{" "}
+              <span className="text-accent">
+                co-developed CalNoy, a clean food e-commerce platform using the
+                MERN stack in an Agile team setting
+              </span>
+              . I contributed to both Frontend and Backend, including Git
+              workflow support, API design, and deployment.
             </p>
-            <p>
+            <p className="mb-8">
               This journey confirmed how much I enjoy solving real-world
               problems through code — and I'm ready to grow further as a
               developer who builds with care, clarity, and collaboration.
             </p>
+            <h3 className="text-accent text-[1.125rem]">
+              Here are technologies I work with:
+            </h3>
+            <ul className="grid gap-1">
+              <li>
+                <span className="text-gray">Web Technologies:</span> HTML, CSS
+              </li>
+              <li>
+                <span className="text-gray">Programming Language:</span>{" "}
+                JavaScript, TypeScript
+              </li>
+              <li>
+                <span className="text-gray">Database:</span> SQLite, MongoDB
+              </li>
+              <li>
+                <span className="text-gray">Frontend Library:</span> React,
+                NextJS
+              </li>
+              <li>
+                <span className="text-gray">Backend Library:</span> Node.js,
+                Express, Mongoose
+              </li>
+              <li>
+                <span className="text-gray">Architecture & API Design:</span>{" "}
+                RESTful API, MVC
+              </li>
+              <li>
+                <span className="text-gray">CSS Framework:</span> Tailwind CSS
+              </li>
+              <li>
+                <span className="text-gray">CSS Preprocessor:</span> SCSS
+              </li>
+              <li>
+                <span className="text-gray">Version Control:</span> Git, GitHub
+              </li>
+              <li>
+                <span className="text-gray">CMS:</span> Wordpress
+              </li>
+              <li>
+                <span className="text-gray">Design Tools:</span> Figma,
+                Photoshop, Illustrator
+              </li>
+            </ul>
           </div>
           {/* <Link
             href="/about"
@@ -44,13 +97,13 @@ export default function About() {
             How I Got Here
           </Link> */}
         </div>
-        <div className="overflow-hidden w-[50%] mr-[10px] h-[calc(100%-10px)] rounded-4xl shadow-[10px_10px_var(--color-accent)]">
+        <div className="overflow-hidden md:w-[50%] max-w-[300px] md:max-w-fit h-[calc(100%-10px)] mx-auto md:mr-[10px] rounded-4xl shadow-[10px_10px_var(--color-accent)]">
           <Image
             width={1200}
             height={1200}
             src="https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751367931/me_hdujo9.webp"
             alt="Headshot"
-            className="w-full object-cover"
+            className="w-full mx-auto object-cover"
           />
         </div>
       </section>

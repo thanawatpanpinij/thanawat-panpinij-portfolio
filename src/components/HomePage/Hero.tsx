@@ -4,9 +4,11 @@ import { SlEye } from "react-icons/sl";
 export default function Hero() {
   return (
     <section className="text-center">
-      <p className="mb-4 text-white text-[2rem]">Hi, my name is</p>
-      <h1 className="mb-8 text-accent text-8xl">Thanawat Panpinij</h1>
-      <p className="max-w-[764px] mx-auto mb-12 text-dark-gray text-2xl">
+      <p className="mb-4 text-white text-xl lg:text-[2rem]">Hi, my name is</p>
+      <h1 className="mb-[min(1rem,2rem)] text-accent text-[min(3.5rem,6rem)] leading-16 lg:leading-none">
+        Thanawat Panpinij
+      </h1>
+      <p className="max-w-[764px] mx-auto mb-12 text-dark-gray lg:text-2xl">
         I'm passionate about crafting experiences that are engaging, intuitive,
         and user-centric.
       </p>

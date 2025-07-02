@@ -44,14 +44,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="z-100 sticky top-8 w-fit mx-auto">
-      <nav className="relative grid gap-4 grid-cols-4 place-items-center px-8 py-4 text-dark-gray bg-[rgba(6,17,26,.5)] backdrop-blur-md rounded-full">
+    <header className="z-100 sticky top-0 485:top-8 485:w-fit mx-auto">
+      <nav className="relative grid gap-4 grid-cols-4 place-items-center px-6 py-8 485:px-8 485:py-4 text-dark-gray bg-[rgba(6,17,26,.5)] backdrop-blur-md md:rounded-full">
         {navLists.map(({ label, href }) => {
           return (
             <Link
               key={uuidv4()}
               href={href}
-              className={`z-1 px-4 py-3 transition-color duration-200 rounded-full ${
+              className={`z-1 px-3 py-2 485:px-4 485:py-3 transition-color duration-200 rounded-full ${
                 currentNav === href ? "text-white" : ""
               }`}
             >
