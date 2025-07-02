@@ -40,54 +40,11 @@ export default function About() {
               . I contributed to both Frontend and Backend, including Git
               workflow support, API design, and deployment.
             </p>
-            <p className="mb-8">
+            <p>
               This journey confirmed how much I enjoy solving real-world
               problems through code — and I'm ready to grow further as a
               developer who builds with care, clarity, and collaboration.
             </p>
-            <h3 className="text-accent text-[1.125rem]">
-              Here are technologies I work with:
-            </h3>
-            <ul className="grid gap-1">
-              <li>
-                <span className="text-gray">Web Technologies:</span> HTML, CSS
-              </li>
-              <li>
-                <span className="text-gray">Programming Language:</span>{" "}
-                JavaScript, TypeScript
-              </li>
-              <li>
-                <span className="text-gray">Database:</span> SQLite, MongoDB
-              </li>
-              <li>
-                <span className="text-gray">Frontend Library:</span> React,
-                NextJS
-              </li>
-              <li>
-                <span className="text-gray">Backend Library:</span> Node.js,
-                Express, Mongoose
-              </li>
-              <li>
-                <span className="text-gray">Architecture & API Design:</span>{" "}
-                RESTful API, MVC
-              </li>
-              <li>
-                <span className="text-gray">CSS Framework:</span> Tailwind CSS
-              </li>
-              <li>
-                <span className="text-gray">CSS Preprocessor:</span> SCSS
-              </li>
-              <li>
-                <span className="text-gray">Version Control:</span> Git, GitHub
-              </li>
-              <li>
-                <span className="text-gray">CMS:</span> Wordpress
-              </li>
-              <li>
-                <span className="text-gray">Design Tools:</span> Figma,
-                Photoshop, Illustrator
-              </li>
-            </ul>
           </div>
           {/* <Link
             href="/about"
