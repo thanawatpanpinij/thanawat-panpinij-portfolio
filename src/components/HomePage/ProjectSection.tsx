@@ -4,7 +4,6 @@ import { IoChevronUpOutline, IoChevronDownOutline } from "react-icons/io5";
 import ProjectCard from "./ProjectCard";
 import { projects } from "@/lib/projectData";
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 const visibleProjects = projects.slice(0, 4);
 
@@ -21,10 +20,10 @@ export default function ProjectSection() {
       <section className="grid gap-4 576:grid-cols-2 mt-8">
         {showAll
           ? projects.map((project) => (
-              <ProjectCard key={uuidv4()} project={project} />
+              <ProjectCard key={project.key} project={project} />
             ))
           : visibleProjects.map((project) => (
-              <ProjectCard key={uuidv4()} project={project} />
+              <ProjectCard key={project.key} project={project} />
             ))}
       </section>
       <button

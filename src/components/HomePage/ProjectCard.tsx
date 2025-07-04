@@ -3,7 +3,6 @@
 import { Project } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 import { FaGithub, FaGithubAlt, FaLink } from "react-icons/fa";
 import Link from "next/link";
 
@@ -84,10 +83,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <section className="flex gap-2 items-center">
           {stacks.map((stack) => (
             <Image
-              key={uuidv4()}
+              key={stack.key}
               title={stack.alt}
-              width={20}
-              height={20}
+              width={300}
+              height={300}
               src={stack.stackURL}
               alt={stack.alt}
               className="w-[20px] h-auto object-cover"
