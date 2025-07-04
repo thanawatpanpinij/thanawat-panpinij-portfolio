@@ -11,10 +11,10 @@ import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const navLists: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Works", href: "#works" },
-  { label: "Contact", href: "#contact" },
+  { key: uuidv4(), label: "Home", href: "#home" },
+  { key: uuidv4(), label: "About", href: "#about" },
+  { key: uuidv4(), label: "Works", href: "#works" },
+  { key: uuidv4(), label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -46,10 +46,10 @@ export default function Navbar() {
   return (
     <header className="z-100 sticky top-0 485:top-8 485:w-fit mx-auto">
       <nav className="relative grid gap-4 grid-cols-4 place-items-center px-6 py-8 485:px-8 485:py-4 text-dark-gray bg-[rgba(6,17,26,.5)] backdrop-blur-md md:rounded-full">
-        {navLists.map(({ label, href }) => {
+        {navLists.map(({ key, label, href }) => {
           return (
             <Link
-              key={uuidv4()}
+              key={key}
               href={href}
               className={`z-1 px-3 py-2 485:px-4 485:py-3 transition-color duration-200 rounded-full ${
                 currentNav === href ? "text-white" : ""

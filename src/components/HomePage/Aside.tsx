@@ -10,10 +10,10 @@ import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const asideItems: NavItem[] = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Works", href: "#works" },
-  { label: "Contact", href: "#contact" },
+  { key: uuidv4(), label: "Home", href: "#home" },
+  { key: uuidv4(), label: "About", href: "#about" },
+  { key: uuidv4(), label: "Works", href: "#works" },
+  { key: uuidv4(), label: "Contact", href: "#contact" },
 ];
 
 export default function Aside() {
@@ -39,11 +39,8 @@ export default function Aside() {
 
   return (
     <aside className="fixed right-0 top-[50%] grid grid-rows-4 gap-4 mr-8 translate-y-[-50%]">
-      {asideItems.map(({ label, href }) => (
-        <div
-          key={uuidv4()}
-          className="flex justify-end items-center gap-4 h-[24px]"
-        >
+      {asideItems.map(({ key, label, href }) => (
+        <div key={key} className="flex justify-end items-center gap-4 h-[24px]">
           <p
             className={`text-accent transition-opacity duration-320 ${
               hoverAside && hoverAside === label
