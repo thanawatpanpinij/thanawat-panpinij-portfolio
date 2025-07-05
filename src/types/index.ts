@@ -11,9 +11,15 @@ type Project = {
   frontendRepo?: string;
   backendRepo?: string;
   liveDemo?: string;
-  imageURL: string;
+  image: {
+    width: number;
+    height: number;
+    imageURL: string;
+  };
   stacks: {
     key: string;
+    width: number;
+    height: number;
     stackURL: string;
     alt: string;
   }[];
