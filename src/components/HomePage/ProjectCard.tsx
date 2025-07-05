@@ -11,8 +11,8 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const [isHover, setIsHover] = useState<boolean>(false);
   const { title, frontendRepo, backendRepo, liveDemo, image, stacks } = project;
+  const [isHover, setIsHover] = useState<boolean>(false);
 
   return (
     <article
@@ -30,46 +30,49 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <p className="text-gray">No links</p>
           )}
           {frontendRepo && (
-            <div className="flex gap-2 flex-col items-center">
+            <>
               <Link
                 title="Frontend repo"
                 href={frontendRepo}
                 aria-label="Go to Frontend repo"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
               >
                 <FaGithub size={30} />
+                <p className="text-xs text-gray">Frontend Repo</p>
               </Link>
-              <p className="text-xs text-gray">Frontend Repo</p>
-            </div>
-          )}
-          {backendRepo && (
-            <div className="flex gap-2 flex-col items-center">
-              <Link
-                title="Backend repo"
-                href={backendRepo}
-                aria-label="Go to Backend repo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithubAlt size={30} />
-              </Link>
-              <p className="text-xs text-gray">Backend Repo</p>
-            </div>
+            </>
           )}
           {liveDemo && (
-            <div className="flex gap-2 flex-col items-center">
+            <>
               <Link
                 title="Live demo site"
                 href={liveDemo}
                 aria-label="Go to live demo site"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
               >
                 <FaLink size={30} />
+                <p className="text-xs text-gray">Live Demo</p>
               </Link>
-              <p className="text-xs text-gray">Live Demo</p>
-            </div>
+            </>
+          )}
+          {backendRepo && (
+            <>
+              <Link
+                title="Backend repo"
+                href={backendRepo}
+                aria-label="Go to Backend repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
+              >
+                <FaGithubAlt size={30} />
+                <p className="text-xs text-gray">Backend Repo</p>
+              </Link>
+            </>
           )}
         </div>
         <Image
@@ -77,19 +80,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           height={image.height}
           src={image.imageURL}
           alt={title}
-          className="w-full object-cover"
+          className={`w-full object-cover`}
         />
       </div>
       <div className="flex gap-4 justify-between p-4">
         <h3>{title}</h3>
         <section className="flex gap-2 items-center">
-          {stacks.map(({ key, width, height, stackURL, alt }) => (
+          {stacks.map(({ key, width, height, src, alt }) => (
             <Image
               key={key}
               title={alt}
               width={width}
               height={height}
-              src={stackURL}
+              src={src}
               alt={alt}
               className="w-[20px] h-auto object-cover"
             />

@@ -4,6 +4,14 @@ type NavItem = {
   href: string;
 };
 
+type LogoData = {
+  key: string;
+  width: number;
+  height: number;
+  src: string;
+  alt: string;
+};
+
 type Project = {
   id: string;
   key: string;
@@ -16,13 +24,26 @@ type Project = {
     height: number;
     imageURL: string;
   };
-  stacks: {
-    key: string;
-    width: number;
-    height: number;
-    stackURL: string;
-    alt: string;
-  }[];
+  stacks: LogoData[];
 };
 
-export type { NavItem, Project };
+type Logo = {
+  html: LogoData;
+  css: LogoData;
+  javascript: LogoData;
+  typescript: LogoData;
+  sass: LogoData;
+  react: LogoData;
+  nextjs: LogoData;
+  nodejs: LogoData;
+  express: LogoData;
+  mongodb: LogoData;
+  sqlite: LogoData;
+  chakraUI: LogoData;
+  tailwindcss: LogoData;
+  figma: LogoData;
+  photoshop: LogoData;
+  illustrator: LogoData;
+};
+
+export type { NavItem, Project, Logo, LogoData };
