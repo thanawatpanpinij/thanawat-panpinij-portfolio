@@ -11,8 +11,8 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const [isHover, setIsHover] = useState<boolean>(false);
   const { title, frontendRepo, backendRepo, liveDemo, image, stacks } = project;
+  const [isHover, setIsHover] = useState<boolean>(false);
 
   return (
     <article
@@ -80,19 +80,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           height={image.height}
           src={image.imageURL}
           alt={title}
-          className="w-full object-cover"
+          className={`w-full object-cover`}
         />
       </div>
       <div className="flex gap-4 justify-between p-4">
         <h3>{title}</h3>
         <section className="flex gap-2 items-center">
-          {stacks.map(({ key, width, height, stackURL, alt }) => (
+          {stacks.map(({ key, width, height, src, alt }) => (
             <Image
               key={key}
               title={alt}
               width={width}
               height={height}
-              src={stackURL}
+              src={src}
               alt={alt}
               className="w-[20px] h-auto object-cover"
             />

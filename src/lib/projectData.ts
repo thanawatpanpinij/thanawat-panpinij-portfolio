@@ -1,6 +1,7 @@
 import { Project } from "@/types";
 import { logo } from "./logo";
 import { v4 as uuidv4 } from "uuid";
+import { createStackData } from "./myHelperFunction";
 
 export const projects: Project[] = [
   {
@@ -17,50 +18,14 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368289/CalNoy_egljnu.webp",
     },
-    stacks: [
-      {
-        key: logo.mongodb.key,
-        width: logo.mongodb.width,
-        height: logo.mongodb.height,
-        stackURL: logo.mongodb.src,
-        alt: logo.mongodb.alt,
-      },
-      {
-        key: logo.express.key,
-        width: logo.express.width,
-        height: logo.express.height,
-        stackURL: logo.express.src,
-        alt: logo.express.alt,
-      },
-      {
-        key: logo.react.key,
-        width: logo.react.width,
-        height: logo.react.height,
-        stackURL: logo.react.src,
-        alt: logo.react.alt,
-      },
-      {
-        key: logo.nodejs.key,
-        width: logo.nodejs.width,
-        height: logo.nodejs.height,
-        stackURL: logo.nodejs.src,
-        alt: logo.nodejs.alt,
-      },
-      {
-        key: logo.css.key,
-        width: logo.css.width,
-        height: logo.css.height,
-        stackURL: logo.css.src,
-        alt: logo.css.alt,
-      },
-      {
-        key: logo.tailwindcss.key,
-        width: logo.tailwindcss.width,
-        height: logo.tailwindcss.height,
-        stackURL: logo.tailwindcss.src,
-        alt: logo.tailwindcss.alt,
-      },
-    ],
+    stacks: createStackData([
+      logo.mongodb,
+      logo.express,
+      logo.react,
+      logo.nodejs,
+      logo.css,
+      logo.tailwindcss,
+    ]),
   },
   {
     id: "2",
@@ -75,43 +40,14 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368286/notura_acikev.webp",
     },
-    stacks: [
-      {
-        key: logo.mongodb.key,
-        width: logo.mongodb.width,
-        height: logo.mongodb.height,
-        stackURL: logo.mongodb.src,
-        alt: logo.mongodb.alt,
-      },
-      {
-        key: logo.express.key,
-        width: logo.express.width,
-        height: logo.express.height,
-        stackURL: logo.express.src,
-        alt: logo.express.alt,
-      },
-      {
-        key: logo.react.key,
-        width: logo.react.width,
-        height: logo.react.height,
-        stackURL: logo.react.src,
-        alt: logo.react.alt,
-      },
-      {
-        key: logo.nodejs.key,
-        width: logo.nodejs.width,
-        height: logo.nodejs.height,
-        stackURL: logo.nodejs.src,
-        alt: logo.nodejs.alt,
-      },
-      {
-        key: logo.tailwindcss.key,
-        width: logo.tailwindcss.width,
-        height: logo.tailwindcss.height,
-        stackURL: logo.tailwindcss.src,
-        alt: logo.tailwindcss.alt,
-      },
-    ],
+
+    stacks: createStackData([
+      logo.mongodb,
+      logo.express,
+      logo.react,
+      logo.nodejs,
+      logo.tailwindcss,
+    ]),
   },
   {
     id: "3",
@@ -124,43 +60,13 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/product-store_oxdvpy.webp",
     },
-    stacks: [
-      {
-        key: logo.mongodb.key,
-        width: logo.mongodb.width,
-        height: logo.mongodb.height,
-        stackURL: logo.mongodb.src,
-        alt: logo.mongodb.alt,
-      },
-      {
-        key: logo.express.key,
-        width: logo.express.width,
-        height: logo.express.height,
-        stackURL: logo.express.src,
-        alt: logo.express.alt,
-      },
-      {
-        key: logo.react.key,
-        width: logo.react.width,
-        height: logo.react.height,
-        stackURL: logo.react.src,
-        alt: logo.react.alt,
-      },
-      {
-        key: logo.nodejs.key,
-        width: logo.nodejs.width,
-        height: logo.nodejs.height,
-        stackURL: logo.nodejs.src,
-        alt: logo.nodejs.alt,
-      },
-      {
-        key: logo.chakraUI.key,
-        width: logo.chakraUI.width,
-        height: logo.chakraUI.height,
-        stackURL: logo.chakraUI.src,
-        alt: logo.chakraUI.alt,
-      },
-    ],
+    stacks: createStackData([
+      logo.mongodb,
+      logo.express,
+      logo.react,
+      logo.nodejs,
+      logo.chakraUI,
+    ]),
   },
   {
     id: "4",
@@ -174,36 +80,7 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368286/Pokemon-App_lxnulw.webp",
     },
-    stacks: [
-      {
-        key: logo.html.key,
-        width: logo.html.width,
-        height: logo.html.height,
-        stackURL: logo.html.src,
-        alt: logo.html.alt,
-      },
-      {
-        key: logo.css.key,
-        width: logo.css.width,
-        height: logo.css.height,
-        stackURL: logo.css.src,
-        alt: logo.css.alt,
-      },
-      {
-        key: logo.javascript.key,
-        width: logo.javascript.width,
-        height: logo.javascript.height,
-        stackURL: logo.javascript.src,
-        alt: logo.javascript.alt,
-      },
-      {
-        key: logo.sass.key,
-        width: logo.sass.width,
-        height: logo.sass.height,
-        stackURL: logo.sass.src,
-        alt: logo.sass.alt,
-      },
-    ],
+    stacks: createStackData([logo.html, logo.css, logo.javascript, logo.sass]),
   },
   {
     id: "5",
@@ -217,29 +94,7 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/Weather-App_lfgru5.webp",
     },
-    stacks: [
-      {
-        key: logo.html.key,
-        width: logo.html.width,
-        height: logo.html.height,
-        stackURL: logo.html.src,
-        alt: logo.html.alt,
-      },
-      {
-        key: logo.css.key,
-        width: logo.css.width,
-        height: logo.css.height,
-        stackURL: logo.css.src,
-        alt: logo.css.alt,
-      },
-      {
-        key: logo.javascript.key,
-        width: logo.javascript.width,
-        height: logo.javascript.height,
-        stackURL: logo.javascript.src,
-        alt: logo.javascript.alt,
-      },
-    ],
+    stacks: createStackData([logo.html, logo.css, logo.javascript]),
   },
   {
     id: "6",
@@ -253,28 +108,6 @@ export const projects: Project[] = [
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/Frontend-Mentor-Mortgage-repayment-calculator_blfwnh.webp",
     },
-    stacks: [
-      {
-        key: logo.html.key,
-        width: logo.html.width,
-        height: logo.html.height,
-        stackURL: logo.html.src,
-        alt: logo.html.alt,
-      },
-      {
-        key: logo.css.key,
-        width: logo.css.width,
-        height: logo.css.height,
-        stackURL: logo.css.src,
-        alt: logo.css.alt,
-      },
-      {
-        key: logo.javascript.key,
-        width: logo.javascript.width,
-        height: logo.javascript.height,
-        stackURL: logo.javascript.src,
-        alt: logo.javascript.alt,
-      },
-    ],
+    stacks: createStackData([logo.html, logo.css, logo.javascript]),
   },
 ];

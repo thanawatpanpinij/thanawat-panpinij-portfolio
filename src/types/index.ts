@@ -4,6 +4,14 @@ type NavItem = {
   href: string;
 };
 
+type LogoData = {
+  key: string;
+  width: number;
+  height: number;
+  src: string;
+  alt: string;
+};
+
 type Project = {
   id: string;
   key: string;
@@ -16,21 +24,7 @@ type Project = {
     height: number;
     imageURL: string;
   };
-  stacks: {
-    key: string;
-    width: number;
-    height: number;
-    stackURL: string;
-    alt: string;
-  }[];
-};
-
-type LogoData = {
-  key: string;
-  width: number;
-  height: number;
-  src: string;
-  alt: string;
+  stacks: LogoData[];
 };
 
 type Logo = {
@@ -52,4 +46,4 @@ type Logo = {
   illustrator: LogoData;
 };
 
-export type { NavItem, Project, Logo };
+export type { NavItem, Project, Logo, LogoData };
