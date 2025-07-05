@@ -30,46 +30,49 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <p className="text-gray">No links</p>
           )}
           {frontendRepo && (
-            <div className="flex gap-2 flex-col items-center">
+            <>
               <Link
                 title="Frontend repo"
                 href={frontendRepo}
                 aria-label="Go to Frontend repo"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
               >
                 <FaGithub size={30} />
+                <p className="text-xs text-gray">Frontend Repo</p>
               </Link>
-              <p className="text-xs text-gray">Frontend Repo</p>
-            </div>
-          )}
-          {backendRepo && (
-            <div className="flex gap-2 flex-col items-center">
-              <Link
-                title="Backend repo"
-                href={backendRepo}
-                aria-label="Go to Backend repo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithubAlt size={30} />
-              </Link>
-              <p className="text-xs text-gray">Backend Repo</p>
-            </div>
+            </>
           )}
           {liveDemo && (
-            <div className="flex gap-2 flex-col items-center">
+            <>
               <Link
                 title="Live demo site"
                 href={liveDemo}
                 aria-label="Go to live demo site"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
               >
                 <FaLink size={30} />
+                <p className="text-xs text-gray">Live Demo</p>
               </Link>
-              <p className="text-xs text-gray">Live Demo</p>
-            </div>
+            </>
+          )}
+          {backendRepo && (
+            <>
+              <Link
+                title="Backend repo"
+                href={backendRepo}
+                aria-label="Go to Backend repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 flex-col items-center transition-transform duration-200 hover:-translate-y-1"
+              >
+                <FaGithubAlt size={30} />
+                <p className="text-xs text-gray">Backend Repo</p>
+              </Link>
+            </>
           )}
         </div>
         <Image
