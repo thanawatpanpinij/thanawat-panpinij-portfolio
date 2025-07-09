@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <article
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      className="text-white bg-black rounded-2xl transition duration-400 hover:-translate-1 hover:shadow-[7px_7px_var(--color-accent)]"
+      className="overflow-hidden text-white bg-black rounded-2xl transition duration-400 hover:-translate-1 hover:shadow-[7px_7px_var(--color-accent)]"
     >
       <div className="relative">
         <div
