@@ -80,6 +80,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           height={image.height}
           src={image.imageURL}
           alt={title}
+          placeholder="blur"
+          blurDataURL={image.blurDataURL}
+          loading="lazy"
           className={`w-full object-cover`}
         />
       </div>

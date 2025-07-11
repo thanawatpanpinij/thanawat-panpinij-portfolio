@@ -1,7 +1,7 @@
 import { Project } from "@/types";
-import { logo } from "./logo";
+import { logo } from "./logoData";
 import { v4 as uuidv4 } from "uuid";
-import { createStackData } from "./myHelperFunction";
+import { createStackData } from "../utils/stackUtils";
 
 export const projects: Project[] = [
   {
@@ -17,6 +17,8 @@ export const projects: Project[] = [
       height: 574,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368289/CalNoy_egljnu.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAJUlEQVR4nAEaAOX/AOz27d3n36itgcLCsgD4//vWzcoQAAClopb1SxDLnH4c9wAAAABJRU5ErkJggg==",
     },
     stacks: createStackData([
       logo.mongodb,
@@ -39,6 +41,8 @@ export const projects: Project[] = [
       height: 569,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368286/notura_acikev.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAIklEQVR4nGMIcFT1sxE0VmbIjTZhsNZgUONk+P7+0Z9vrwBNZgja+LqIXAAAAABJRU5ErkJggg==",
     },
 
     stacks: createStackData([
@@ -59,6 +63,8 @@ export const projects: Project[] = [
       height: 569,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/product-store_oxdvpy.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAIklEQVR4nGPw8vT5//rOi72nXFz9GRiYhTl4JRmYhRmYhQGKnAdd+LIEnwAAAABJRU5ErkJggg==",
     },
     stacks: createStackData([
       logo.mongodb,
@@ -79,6 +85,8 @@ export const projects: Project[] = [
       height: 569,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368286/Pokemon-App_lxnulw.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAI0lEQVR4nGNgEPZgiGhmyOpjSG5nYFh2k91uqlvMuln//wMAWLAJWh35YIEAAAAASUVORK5CYII=",
     },
     stacks: createStackData([logo.html, logo.css, logo.javascript, logo.sass]),
   },
@@ -93,6 +101,8 @@ export const projects: Project[] = [
       height: 569,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/Weather-App_lfgru5.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAIUlEQVR4nGMoP/bx0P//G779n/LgPwODfChD8jwQEnQFANHvDNPShknrAAAAAElFTkSuQmCC",
     },
     stacks: createStackData([logo.html, logo.css, logo.javascript]),
   },
@@ -107,6 +117,8 @@ export const projects: Project[] = [
       height: 569,
       imageURL:
         "https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751368287/Frontend-Mentor-Mortgage-repayment-calculator_blfwnh.webp",
+      blurDataURL:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAJUlEQVR4nAEaAOX/AOL1//j//wAIFtjt+QDi9f/u+O4ZNkTZ7vrrBRGn9dA8xAAAAABJRU5ErkJggg==",
     },
     stacks: createStackData([logo.html, logo.css, logo.javascript]),
   },

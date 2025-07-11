@@ -1,7 +1,7 @@
-import Hero from "@/components/HomePage/Hero";
-import About from "@/components/HomePage/About";
-import ProjectSection from "@/components/HomePage/ProjectSection";
-import Contact from "@/components/HomePage/Contact";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Project from "@/components/sections/Project";
+import Contact from "@/components/sections/Contact";
 // import Aside from "@/components/HomePage/Aside";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="grid gap-16 max-w-[calc(915px+4rem)] mx-auto px-8 pt-14">
         <Hero />
         <About />
-        <ProjectSection />
+        <Project />
       </div>
       <Contact />
       {/* <Aside /> */}

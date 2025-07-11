@@ -3,7 +3,7 @@
 import {
   getCurrentSectionId,
   highlightCurrentNavItem,
-} from "@/lib/getCurrentSectionId";
+} from "@/lib/utils/scrollUtils";
 import { NavItem } from "@/types";
 import Link from "next/link";
 // import { usePathname } from "next/navigation";
