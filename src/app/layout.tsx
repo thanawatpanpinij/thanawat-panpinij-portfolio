@@ -1,8 +1,8 @@
 // import type { Metadata } from "next";
 import { Varela_Round } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/HomePage/Navbar";
-import Footer from "@/components/HomePage/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const varelaRound = Varela_Round({
   weight: "400",

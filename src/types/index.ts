@@ -23,6 +23,7 @@ type Project = {
     width: number;
     height: number;
     imageURL: string;
+    blurDataURL: string;
   };
   stacks: LogoData[];
 };

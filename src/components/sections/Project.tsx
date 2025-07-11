@@ -1,13 +1,13 @@
 "use client";
 
 import { IoChevronUpOutline, IoChevronDownOutline } from "react-icons/io5";
-import ProjectCard from "./ProjectCard";
-import { projects } from "@/lib/projectData";
+import ProjectCard from "../ui/ProjectCard";
+import { projects } from "@/lib/data/projectData";
 import { useState } from "react";
 
 const visibleProjects = projects.slice(0, 4);
 
-export default function ProjectSection() {
+export default function Project() {
   const [showAll, setShowAll] = useState<boolean>(false);
   return (
     <section id="works" className="sections grid gap-8">

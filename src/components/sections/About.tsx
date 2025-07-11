@@ -60,6 +60,9 @@ export default function About() {
             height={1200}
             src="https://res.cloudinary.com/dsgtmtcmt/image/upload/v1751367931/me_hdujo9.webp"
             alt="Headshot"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAP0lEQVR4nAE0AMv/AM7OzsjFx5+ameHh4
+QDw7/R5pL6rvs34+PgAqKqtACdjAEt90dHRAFxXVQAhQAATPYSEg1+CHAiusoLvAAAAAElFTkSuQmCC"
             className="w-full mx-auto object-cover"
           />
         </div>
